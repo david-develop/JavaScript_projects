@@ -1,6 +1,6 @@
 // Print next 10 numbers and check if odd or even
 
-const number = Number(prompt("Enter the starting number:"));
+const number = Number(prompt('Enter the starting number:'));
 
 // Solution using a for
 for (let i = number; i < number + 10; i++) {

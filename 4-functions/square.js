@@ -1,5 +1,5 @@
 // Square the given number x minimal and defined
-function square1(x) {
+function square1 (x) {
   return (x * x);
 }
 
