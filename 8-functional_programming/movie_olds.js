@@ -1,3 +1,5 @@
+// shows the titles of movies released before year 20002000, using functional programming.
+
 const movieList = [
   {
     title: 'Batman',
@@ -43,15 +45,8 @@ const movieList = [
   }
 ];
 
-const titles = movies => movies.map(movie => movie.title);
-const byNolan = movie => movie.director === 'Christopher Nolan';
-const filter = (movies, func) => movies.filter(func);
-const goodRating = movie => movie.imdbRating >= 7.5;
-const ratings = movies => movies.map(movie => movie.imdbRating);
-const average = array => array.reduce((sum, value) => sum + value, 0) / array.length;
+function olderMovies (movieList) {
+  return movieList.filter((movie) => movie.year <= 2000).map((movie) => movie.title);
+}
 
-console.log(titles(movieList));
-const nolanMovieList = filter(movieList, byNolan);
-console.log(nolanMovieList.length);
-console.log(titles(filter(movieList, goodRating)));
-console.log(average(ratings(nolanMovieList)));
+console.log(olderMovies(movieList));
