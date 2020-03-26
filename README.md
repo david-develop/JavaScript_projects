@@ -18,3 +18,5 @@ This repository contain different projects and scripts in relation to the **Comp
 - 	9-basic_social_news_program
 - 	10-DOM
 - 	apply_js_to_html
+
+> Javascript is one of the most prominent web programming languages that really made a difference. This course aims to be a useful companion for anyone wishing to (re)discover the many facets of JavaScript.
